@@ -8,5 +8,24 @@
     <script type="text/javascript">
       alert("You've been hacked.  Act fast!");
     </script>
+
+    <img id="james" src="https://media.tenor.com/Dy3EjU5e--QAAAAM/splits-james.gif">
+
+    <script>
+      james.onclick = function() {
+        let start = Date.now();
+  
+        let timer = setInterval(function() {
+          let timePassed = Date.now() - start;
+  
+          james.style.left = timePassed / 5 + 'px';
+  
+          if (timePassed > 2000) clearInterval(timer);
+  
+        }, 20);
+      }
+    </script>
+
+    
   </body>
 </html>
